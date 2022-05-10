@@ -19,8 +19,8 @@ public class MainSqrt {
 		
 		while(start<=end) {
 			int mid = start + (end-start)/2; 
-			long m = (long)mid * (long)(mid);
-			if(m > x) {
+			long mid_sq = (long)mid * (long)(mid);
+			if(mid_sq > x) {
 				end = mid-1;
 			}
 			else {
