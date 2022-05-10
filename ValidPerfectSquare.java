@@ -15,7 +15,7 @@ class Solution {
             else if(sq < num){
                 start = mid + 1;
             }
-            else{     //sq == num
+            else{     //here sq == num
                 return true;
             }
         }
