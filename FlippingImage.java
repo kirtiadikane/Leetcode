@@ -36,7 +36,7 @@ class Solution {
         		}else {
         			arr[row][col] = 0;
         		}
-        	}
+        	}  
         }
 		return arr;
     }
