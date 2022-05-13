@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/find-the-highest-altitude/
 // 1732. Find the Highest Altitude
-
+//Solution 1
 class Solution {
     public int largestAltitude(int[] gain) {
        int[] ans = new int[gain.length+1];
@@ -13,6 +13,25 @@ class Solution {
             }
         }
         //System.out.println(Arrays.toString(ans));
+        return max; 
+    }
+}
+
+
+//OR
+//Solution 2
+class Solution {
+    public int largestAltitude(int[] gain) {
+       int max=0, temp = 0;       
+        for(int i = 0; i < gain.length; i++){         
+           if( (temp + gain[i]) > max ){
+                max = temp + gain[i];
+                temp = temp + gain[i];
+            }
+            else {
+        	temp = temp + gain[i];
+            }
+        }
         return max; 
     }
 }
