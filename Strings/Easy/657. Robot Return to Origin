@@ -17,11 +17,11 @@ class Solution {
 //more optimized solution
 class Solution {
     public boolean judgeCircle(String moves) {
-       int[] a=new int[26];
-       for(char c:moves.toCharArray())
-       {
-           a[c-'A']++;
-       }
-        return a['U'-'A']==a['D'-'A'] && a['L'-'A']==a['R'-'A'];
+       int[] arr=new int[26];
+	       for(char ch:moves.toCharArray())
+	       {
+	           arr[ch-'A']++;
+	       }
+	        return arr['U'-'A']==arr['D'-'A'] && arr['L'-'A']==arr['R'-'A'];	    
     }
 }
