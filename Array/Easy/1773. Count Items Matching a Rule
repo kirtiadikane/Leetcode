@@ -1,3 +1,5 @@
+https://leetcode.com/problems/count-items-matching-a-rule/
+
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int n=items.size();
