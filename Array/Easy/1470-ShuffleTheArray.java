@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/shuffle-the-array/
+
 class Solution {
     public int[] shuffle(int[] nums, int n) {
         int ans[] = new int[2*n];
