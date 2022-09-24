@@ -1,3 +1,5 @@
+https://leetcode.com/problems/goal-parser-interpretation/
+
 class Solution {
     public String interpret(String command) {
         StringBuilder str= new StringBuilder();
